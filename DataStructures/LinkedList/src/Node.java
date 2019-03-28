@@ -11,8 +11,10 @@ public class Node {
 	}
 	
 	public  int countNodes(Node head) {
-		if (head.next != null) {
-			countNodes(head.next);
+		Node current = head;
+		//Use while loop or the recursive method 
+		if (current.next != null) {
+			countNodes(current.next);
 			numOfNodes ++;
 		}
 		return numOfNodes+1;

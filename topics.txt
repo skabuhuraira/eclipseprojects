@@ -131,6 +131,31 @@ Behavioral: templat method, Visiot, Mediator, Command, Iterator, Interpretaor, O
 Class and Object patterns
 
 
+Maths for CS MIT course: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/
+
+DS and Algorithms MIT course : https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/
+
+
+
+LeaRNED:
+
+1. Object and Classes : 
+	- IS-A and HAS-A relationship
+	- Inheritence vs Composition
+	- Class having reference to another class is HAS-A/Composition
+	- Class having reference to another object of same class - useful in Linked Lists
+	- Its called Strategy Design Pattern - Duck problem
+
+2. Memory and Storage
+	- RAM
+	- bits and bytes
+	- memory is strip of bytes --> bits
+	- Arrays - fixed length
+	- int is 32 bits
+
+3. LinkedLists
+	-
+
 
 
 
