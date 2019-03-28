@@ -1,0 +1,146 @@
+immutable
+how to create such class
+comparable comparator
+executor
+composition
+threads
+generics
+collections
+reflection
+design patterns
+
+1st :
+count no of occurances of ch in a word - which DS to use and complexity
+find second largest number in an array and complexity
+why rest is stateless.can we not save cookies and sessions etc
+design patterns u have used?
+how can u implement hashmap 
+
+Learning:
+- Need to update resume and study about each. make cheatsheet for all
+- hands on on java common questions
+- complexity
+- data structures
+- left view of binary tree
+- 
+
+
+=============
+https://www.interviewbit.com/courses/programming/
+
+Time Complexity
+Arrays
+Math
+Binary Search 
+Strings
+Bit Manipulation
+Two Pointers
+Linked Lists
+Stacks and Quesues
+Backtracking
+Hashing
+Heaps and Maps
+tree data Structure
+Dynamic Programming
+Greedy Algorithm
+Graph
+Code Ninja
+
+System Design
+Scripting
+Database
+Puzzles
+
+
+After all this --> careermonk
+journal dev
+Udemy
+and other links and notes which are useful
+
+oauth saml etc
+
+design patterns
+
+https://www.geeksforgeeks.org/
+https://github.com/
+
+https://github.com/skabuhuraira/samples.git
+
+
+1. Setup Git in laptop and mac with eclipse
+http://www.eclipsesource.com/blogs/tutorials/egit-tutorial/
+http://www.geo.uzh.ch/microsite/reproducible_research/post/rr-eclipse-git/
+https://www.vogella.com/tutorials/EclipseGit/article.html#github_push
+
+
+https://blog.osteele.com/2008/05/my-git-workflow/ 
+
+
+
+
+https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+
+Prepare folders and notes for:
+- java
+- Git
+- Design Patterns
+- Networking
+- ant and maven
+- rest and soap
+
+
+Design Principles - Head First:
+
+1. Strategy pattern  (Duck Problem): Defines a family of algorithms, encapsulates eacj one and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+
+- Favor composition over inheritence
+- Program to an interface, not an implementation
+- Identify aspects of application that vary and separate them from what stays the same
+
+2. Observer Pattern : Defines a 1-to-many dependency b/w objects so that when one object changes state, all of its dependents are notified and updated automatically
+
+Publishers+Subscribers of newpaper = Observer pattern
+Publishers = Subject
+Subscribers = Observers
+
+- provides an object design where subjects and observers are loosely coupled.
+- strive for loosely coupled designs between objects that interact
+
+start from page 61
+
+3. Decorator
+4. Factory
+5. Singleton
+6. Command
+7. Adapter and facade
+8. Template Method
+9. Iterator and Composite
+10. State
+11. Proxy
+12. Compound
+13. 
+
+
+
+
+Creational:
+Singleton, Builder, Prototype, Abstract factory, Factory Method
+Structural : Decorator, Proxy, Composite, facade, Flyweight, Bridge, Adapter
+Behavioral: templat method, Visiot, Mediator, Command, Iterator, Interpretaor, Observer, Chain of Responsibility, State, Strategy, memnto
+
+Class and Object patterns
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
