@@ -181,8 +181,12 @@ LeaRNED:
 
 
 
-
-LinkedIn Learning till 28th April 2019
+Learning Resources:
+1. LinkedIn Learning till 28th April 2019 
+	- DS and Algorithms
+2. Youtube - DSjo , mycode school and misc
+3. Headfirst Design Patterns
+4. 
 
 
 
