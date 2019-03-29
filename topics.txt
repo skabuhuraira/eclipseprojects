@@ -105,10 +105,15 @@ Subscribers = Observers
 
 - provides an object design where subjects and observers are loosely coupled.
 - strive for loosely coupled designs between objects that interact
+- Oberserver and Observable classes in Java - real life examples
 
 start from page 61
 
 3. Decorator
+- starbuzz coffee
+- decorator classes
+- real life: File Input Stream --> Buffered Input STream --> LineNumberInputStream Classes (remember the diagram - page 103)
+
 4. Factory
 5. Singleton
 6. Command
