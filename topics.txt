@@ -114,8 +114,18 @@ start from page 61
 - decorator classes
 - real life: File Input Stream --> Buffered Input STream --> LineNumberInputStream Classes (remember the diagram - page 103)
 
+** Designs should be open for extension and closed for modification
+
+
 4. Factory
+- cases when there are multiple types of objects which can be created
+- example : Pizza - Cheese Pizza, veggie Delight etc. Operations are same --> bake, topings, cut, pack, ship
+
 5. Singleton
+- only single instance
+-synchronized
+- OR volatile
+
 6. Command
 7. Adapter and facade
 8. Template Method
@@ -139,6 +149,8 @@ Class and Object patterns
 Maths for CS MIT course: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/
 
 DS and Algorithms MIT course : https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/
+
+https://web.stanford.edu/class/cs101/index.html
 
 
 
