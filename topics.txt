@@ -121,6 +121,14 @@ LeaRNED:
 		- Fibonacci
 		- Factorial
 5. Big-O and Time Complexity
+	- linear , constant , quadratic 
+	- O(n),    O(1),      O(n2)<--n square
+	- T(n) = an +b where a and b are constants <---O(n)
+	- T(n) = cn2 +dn + e where cod and e are constants <---O(n2)
+
+
+a. GIT
+b. 
 
 
 

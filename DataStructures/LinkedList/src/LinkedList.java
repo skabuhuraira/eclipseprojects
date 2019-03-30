@@ -21,6 +21,24 @@ public class LinkedList {
 		return length;
 	}
 	
+	//O(1)
+	public void deleteAtHead() {
+		this.head = this.head.getNext();
+	}
+	
+	public Node find(int data)  {
+		Node current = this.head;
+		
+		while(current != null) {
+			if (current.getData() == data ) {
+				return current;
+			}
+			current = current.getNext();
+		}
+		
+		return null;
+	}
+	
 	public String toString() {
 		String result = "{ ";
 		Node current = this.head;

@@ -31,6 +31,12 @@ public class LinkedListTest {
 		
 		System.out.println(list);
 		System.out.println("Length of the Linked List is " + list.length());
+		list.deleteAtHead();
+		System.out.println("Length of the Linked List is " + list.length());
+		System.out.println("Searched Node is :" + list.find(15));
+		
+		
+		
 	}
 	
 	
