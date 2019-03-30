@@ -2,22 +2,31 @@
 
 public class Node {
 	
-	int data;
-	Node next;
-	int numOfNodes;
+	private int data;
+	public int getData() {
+		return data;
+	}
+
+	public void setData(int data) {
+		this.data = data;
+	}
+
+	private Node next;
+	public Node getNext() {
+		return next;
+	}
+
+	public void setNext(Node next) {
+		this.next = next;
+	}
 	
-	Node (int data) {
+	public Node (int data) {
 		this.data = data;
 	}
 	
-	public  int countNodes(Node head) {
-		Node current = head;
-		//Use while loop or the recursive method 
-		if (current.next != null) {
-			countNodes(current.next);
-			numOfNodes ++;
-		}
-		return numOfNodes+1;
+	
+	public String toString() {
+		return "Data: " + this.data;
 	}
 	
 }
