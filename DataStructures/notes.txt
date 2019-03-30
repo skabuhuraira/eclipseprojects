@@ -1,0 +1,383 @@
+==========
+Linked In:
+==========
+Data Types:
+
+Decimal:
+  - Float - 32 bits ~7 decimal digits 
+  - Double - 64 bits ~16 decimal digits
+  
+Whole Numbers:
+  - short - 16 bits (-32768 to 32767)
+  - int - 32 bits (-2billion to 2 billion)
+  - long - 64 bits (-2~63 to 2~63)
+  
+Signed and Unsigned Numbers
+  - Signed : +ve and -ve values
+  - Unsigned : only +ve
+  
+Javascript has just numbers
+Python: int long float and complex. Python 3 long(int)
+
+Java : float x = 10.0f;
+JavaScript: var myNum =29
+
+Boolean : true/false
+Python: isLightOn = true;
+
+char
+String - series of characters
+
+Each data type (int, long , char, boolean , string etc) all store 0s or 1s abstracted by the programming languages
+
+1 bit = 0/1
+Data Structures : links individual data to form a data set
+
+String in javascript:
+var name = "Jessica"
+inPython:
+name = 'Jessica'; <-- ' or " or "'
+
+Primitive data types - space consumed is always fixed irrespective of the value
+Data Structures - depends
+
+Referenced types : variable name --> memory address --> data  (Strings and data Structures)
+Primitive data types : variable name --> data (int, long, char etc)
+
+1. Arrays
+
+- collection of items where each element is identified by index
+- each element --> index and data. index ~ slot
+- example movie hall seats
+- index : 0,1,2,3,4.....,n
+- Java : int[] lotteryNumbers = { 0, 2, 18, 40, 14, 30}; int first = lotteryNumbers[0];
+- Python : lotteryNumbers = [0, 2, 18, 40, 14, 30 ]
+           second = lotteryNumbers[1]
+- accessing lotteryNumbers[6] which doesnt exist --> IndexArrayoutOfBounds
+** jdoodle : online editor/compiler
+- Arrays provide organization and storage
+- movie hall seats is an example of multi dimensional array
+- multi dimensional array : (0,0) ,(0,1) ,.... : 1st is row and 2nd is column
+- multi dimensional array example in nodejs
+var dinnerChoices [[ "salad" , "soup", "cheese"], ["chicken", "salmon", "lasagna"]]
+- multi dimensional array is array of arrays
+- jagged array : number of columns not fixed for each row
+int[][] jagged = new int[3][];
+jagged[0] = new int[2];
+//set row 0
+jagged[0][0] =8;
+jagged[0][1] =10;
+
+//set row 1
+jagged[1] = new int[9];
+
+//set row 3
+jagged[2] = new int[4]{2,4,8,1,0}
+
+- java and C++ : basic arrays cannot be resized
+- Ruby, javascript : can be resized
+
+- Resizable/dynamic/
+- Java : Immutable : basic array data
+- Mutable : Java classses gives us ArrayList 
+
+arrayList - array under the surface
+arraylist.add(2, 10)
+if index is not added, it gets added at the end
+add =push
+remove=pop
+ArrayList<Integer> myArrayList = new ArrayList<Integer>();
+for(int i=0; i< 10: i++){
+myArrayList.add(i);
+}
+myArrayList.add(2,10);
+Sysout(myArrayList);
+Sysout(myArrayList.indexOf(9));//-1 if the index doesnt exist
+//this search is linear search behind teh scenes
+
+Sorting:
+number --> natural order ..asc or dec
+strings/character ==> alphabetical
+custom (class, object etc) ==> comparators
+
+Big-O notation
+Array - updation or retrival - O(1)
+      - best case insertion - O(1)
+      - worst case insertion - O(n) when array size is not enough
+      - search - 1/n
+      - deletion - 1/n
+      - sorting - depends on algo
+      
+LinkedList, DoubleLinked List, Stack, Queue
+
+Hash based:
+Associative array : collection of key value
+  - keys must be unique
+  - order isnt imporatant
+  - duplicate values are allowed
+  - abstract data type
+  - dictionaly, maps are exaples
+  
+  
+Hashing:
+  - one way (inputs --> hash) and not other way. u cannot get inputs from hash
+  - e.g passwords can be stored as hash
+  - Collision : 2 inputs producing same hash
+  
+HashTable:
+  - implementation of associative abstract data type arry
+  - always added as a key-value set
+  
+Tree:
+  - root node, parent node, child node
+  - siblings : having same parent node
+  - leaf node : no child
+  
+Binary Tree:
+  - max two child nodes for each parent
+  
+Binary Search tree:
+  - sorted
+  - left is less than parent and right is more than parent
+  - can be unbalanced
+  
+Heap:
+- always balanced
+- root node is higest or lowest
+- find min/max O(1)
+- insert O(log(n)
+- search O(n)
+- delete O(n)
+
+Priority queue
+- dont care about insertion order
+- heaps are used to implement this
+
+Balanced - O(log(n))
+Unbalanced - O(n)
+
+==========
+Raghavendra
+==========
+
+Euclids algorithm
+- m and n are 2 +ve integers
+- find gcd of these m and n where m > n
+- divide m/ n and lets say remainder is r
+- if r=0, n is the gcd
+- else m=n, n=r and repeat till r=0
+** try this in program
+
+
+
+ 
+ Analysis:
+ - space complexity (lessimp since memory is cheap nowadays)
+ - Time complexity (more imp)
+    - Worst case (consider this)
+    - best case (dont consider this)
+    - average case (complex)
+    
+ Assumptions:
+ - infinite memory
+ - each opearion takes unit time
+ - each memory access, unit time consumed
+ - data is in RAM
+ 
+ Bubble sort analysis:
+ Sorting:
+- 10,2,8,6,7,3
+- sort in ascending order
+- rules:
+  - pick only 1 ball at a time
+  - start from left most and move rightwards
+ - take first 2 elements and swap if they are not ascending/desecnding, then take next 2 and continue till u reach end
+ - comparison is 1 unit
+ - swapis 3 units time
+ - total (3+1)* (n-1 * n-2 * ...1 = 4n(n-1)
+ - pseudo code:
+ for i = 0 --> Array.length-2
+ for j = 0 --> Array.length-2-i
+ if Array[j] > Array[j+1]
+ tmp=Array[j+1]
+ Array[j+1] = Array[j]
+ Array[j]=tmp
+ 
+ **try
+ 
+
+ constant time <= logn <= sq root n <= n(linear) <= nlogn <= n*2 <= n*3 <= 2*n <= n!(exponential)
+ 
+ Array access elements by index : Constant time : O(1)
+ Search particular element where index not known:
+  - Time complexity depends on no of elements
+  - O(n) <---linear time
+  
+  Bubble Sort Time Complexity:
+    - 2 loops one inside another
+    - O(n*2) --> n-1 + n-2 + .....+1
+    - other sort algos with n*2 : Selection sort and Insertion Sort
+  
+  Selection SOrt:
+    - find the lowest number and swap with first and put a pointer to 1st element
+    - then from pointer to end,find the lowest and swap with 2nd (pointer +1 )
+    - repeat till end
+    - pseudo code:
+    for i=0 to A.length - 2 
+      minIndex = i;
+      for j =i+1 to A.lenth -1
+        if data[j] < data [minIndex]
+          minIndex = j;
+      tmp = data[minIndex]
+      data[minIndex] = data[i]
+      data[i] = temp
+   **try
+      
+  Insertion Sort: 
+    - inspired by cards shuffling
+    - cards in hand are always sorted
+    - new card taken and put in the sorted list at the correct position by first comparing the last element in sorted list and recursively till end
+    - psuedo code:
+    for i = 0 to A.lenth -1
+      current = A[i]
+      j = i -1
+      while j >= 0 && A[j] > current
+        A[j+1] = A[j]
+        j=j-1
+      A[j+1] =current
+   ** try
+   
+   - Bubble sort is most inefficient, never used
+   - Selection sort is better tahn bubble sort. Running time is independent of ordering of elements
+   - Insertion sort is versatile. Effecient for small lists. Can be used with other sorting algos.Relatively good for partially sorted lists
+   
+   Stable vs Unstable Sorts:
+    - take for example an unsorted array : 3,5,2,1,5',10. There are 2 5's here- 5 and 5'
+    - After sorting:
+      - 1,2,3,5,5',10 <-- Stable sort since 5' still holds its place
+      - 1,2,3,5',5,10 <-- Unstable sort since 5' and 5 are interchanged
+    - while j >= 0 && A[j] > current in insertion sort results in stable sort
+    - while j >= 0 && A[j] > current in insertion sort results in unstable sort
+    - example say we have data as name and age and age is already sorted and we have 2 names same. After unstable sort sorting of age goes away unlike stable sort
+    ***try stable and unstable scenarios
+   
+  SEARCHING:
+  =========
+  Array:
+    - access element via index O(1)
+    - find element where index not known O(n)
+  Ordered Arrays:
+  FIND:
+    - find middle index --> (A.length - 1) + 0 / 2 --> e.g say m
+    - check A[m] matches the number u are searching
+    - if not check 0 --> m-1 array or m + 1 to A.length -1 and repeat
+    - Time complexity
+      - first search - n
+      - second search n/2
+      - third n/3
+      ....
+      - i-1 th search is 2
+      - i th search is 1 
+      - find complexity is O(log2 n)
+   INSERTION:
+      - where to insert? as per order
+      - create space --> shift all > the number to be inserted and insert
+      - O(n)
+   Delete: Delete number and move --> O(n)
+  
+    
+LinkedList
+===========
+- Nodes with link to next
+- First node is HEAD
+- Node = data + link to next Node
+- If last node, then link to next node is null
+- only reference we have ina linked list is that of head
+**try
+Class Node:
+private int data;
+private Node nextNode;
+//getters and setters for data and nextNode
+//constructor
+public Node(int data) {
+this.data = data;
+}
+Class LinkedList:
+private Node head;
+//other methods
+//Insertion: add new element as head
+- create new node
+- point new node to head
+- make head point to new node
+- this sequence is imp if we move head as step 2 then linkedlist will be gone as there is no head
+- O(1) beause we always add at head and no travelsal needed
+//Deletion
+- just point head to head.next
+- though the orig head node exists and points to current head, nothing points to it and hence orig head is garbage collected
+-O(1)
+//Searching
+- traverse thru all nodes
+- linear time operation
+- O(n)
+Doubly Ended Linked List:
+- Linkedlist having head and tail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
