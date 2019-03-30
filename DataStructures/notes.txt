@@ -321,6 +321,29 @@ private Node head;
 - O(n)
 Doubly Ended Linked List:
 - Linkedlist having head and tail
+- Insertion at tail
+
+Empty Linked list:
+- head points to null
+
+Sorted Linked List:
+- Insertion:
+  - traverse one by one and find the node whose data is more than given node to be inserted. e.g say u traversed and found 
+  nth node > given nodeto be inserted. Now u can point givennode.next to nth node but u cant get the n-1th node (since u c    annot   traverse backwards) to point to given node.
+  - right way: currentNode.nextNode.getData > givenNode.getData() 
+  - O(n)
+  
+Doubly Linked List:
+- Node = data + nextNode pointer + previousNode pointer
+- head.prevNode = null
+- Insert a new element : O(1)
+**try
+
+Insertion sort revisited:
+- use Doubly Linked List instead of array
+- even tho same time complexity,in reality faster since constanst are less due to less memory consumption
+** try - imp
+
 
 
 
