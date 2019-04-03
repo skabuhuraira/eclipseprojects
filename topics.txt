@@ -151,6 +151,10 @@ Learning Resources:
 
 
 
+SAP :
+REST Web services : https://www.journaldev.com/9170/restful-web-services-tutorial-java
+Maven : LinkedinLearning: https://www.linkedin.com/learning/java-build-automation-with-maven
+Other theoritical questions
 
 
 
