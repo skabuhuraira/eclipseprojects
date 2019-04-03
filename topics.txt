@@ -1,3 +1,6 @@
+https://www.khanacademy.org/computing/computer-science/algorithms#intro-to-algorithms
+
+
 immutable
 how to create such class
 comparable comparator
@@ -8,6 +11,9 @@ generics
 collections
 reflection
 design patterns
+find pattern in a string
+find substrings in a string --> n*(n+1)/2
+
 
 1st :
 count no of occurances of ch in a word - which DS to use and complexity
