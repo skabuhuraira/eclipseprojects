@@ -143,7 +143,8 @@ Learning Resources:
 	- DS and Algorithms
 2. Youtube - DSjo , mycode school and misc
 3. Headfirst Design Patterns
-4. 
+4. GIT: https://www.dyclassroom.com/git/git-stash-save-changes-for-later
+and PPTs and PDFs shared
 
 **download read.zip from google drive
 **cleanup laptop 
