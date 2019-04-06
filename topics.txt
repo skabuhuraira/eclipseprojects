@@ -158,7 +158,7 @@ git push -u origin master
 git branch (loacl)
 git branch -r (remote)
 git branch -a (both)
-
+git fetch
 
 b. 
 
