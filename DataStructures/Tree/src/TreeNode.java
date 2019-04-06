@@ -39,6 +39,21 @@ public class TreeNode {
 		return null;
 	}
 	
+	public void insert(Integer data) {
+		if(data < this.data) {
+			if(this.getLeftChild() == null)
+				this.setLeftChild(new TreeNode(data));
+			else
+				this.getLeftChild().insert(data);
+		} else {
+			if(this.getRightChild() == null)
+				this.setRightChild(new TreeNode(data));
+			else
+				this.getRightChild().insert(data);
+		}
+	}
+	
+	
 	
 	
 
