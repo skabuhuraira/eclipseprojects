@@ -134,6 +134,32 @@ LeaRNED:
 
 
 a. GIT
+3 trees - working, staging, and repository
+master
+HEAD = points to last commint of the current branch
+git add
+git commit -m "message"
+git log
+git diff #diff between working directory and repository
+git diff <filename>
+git diff --staged # diff between staging directory and repository
+git rm <files to delete>
+git mv <filesto move>
+git remote add <alias> <url>
+git remote #to view
+git remote -v
+
+remote	master
+------
+local	origin/master (tries to sync to remote master)
+	master (working directory)
+
+git push -u origin master
+git branch (loacl)
+git branch -r (remote)
+git branch -a (both)
+
+
 b. 
 
 
